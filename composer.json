@@ -1,0 +1,16 @@
+{
+    "name": "shakil/simple-date-time",
+    "description": "Simple date and time usage for php developers.",
+    "autoload": {
+        "psr-4": {
+            "Shakil\\SimpleDateTime\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Shakil Ahmed",
+            "email": "shakil.neub@gmail.com"
+        }
+    ],
+    "require": {}
+}
