@@ -27,7 +27,6 @@ class SimpleDateTime extends DateTime
         return new SimpleDateTime();
     }
 
-
     /**
      * @param $timezone
      * @return $this
@@ -140,5 +139,20 @@ class SimpleDateTime extends DateTime
         return $this;
     }
 
+
+    public function interval($value)
+    {
+        try {
+            $this->add(new \DateInterval($value));
+        } catch (\Exception $e) {
+            return $e->getMessage();
+        }
+        return $this;
+    }
+
+    public function toDateTimeString($format = 'Y-m-d')
+    {
+        return $this->format($format);
+    }
 
 }
